@@ -1,7 +1,7 @@
 # Nightly Systest Corpus
 
 This repository stores generated NebulaStream systest files that are too large or too expensive to keep in the main NebulaStream repository. The nightly workflow checks out this repository and runs the generated suites from `slt/`.
-Currently, all files in this repo are proted from SQL Logic Test. The
+Currently, all files in this repo are proted from SQL Logic Test.
 
 ## Ported test suites
 
