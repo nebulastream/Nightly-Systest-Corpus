@@ -779,7 +779,7 @@ def write_split_systest_files(replay: ReplayOutput, output_dir: Path, queries_pe
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument('input', type=Path)
-    parser.add_argument('--format', choices=('systest', 'fields', 'json', 'replay', 'test'), default='systest')
+    parser.add_argument('--format', choices=('schema-only', 'fields', 'json', 'replay', 'test'), default='test')
     parser.add_argument('--limit-queries', type=int)
     parser.add_argument('--output', type=Path)
     parser.add_argument('--output-dir', type=Path)
