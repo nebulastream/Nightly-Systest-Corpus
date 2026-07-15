@@ -11,12 +11,15 @@ Currently, all files in this repo are proted from SQL Logic Test.
 | `between_10` | [`slt/between_10/`](slt/between_10/) | 54 | 51,730 | Ported | SQL Logic Test predicate corpus with 10 input rows per table. |
 | `between_100` | [`slt/between_100/`](slt/between_100/) | 45 | 42,830 | Ported | SQL Logic Test predicate corpus with 100 input rows per table. |
 | `between_1000` | [`slt/between_1000/`](slt/between_1000/) | 3 | 2,370 | Ported | SQL Logic Test predicate corpus with 1,000 input rows per table. |
+| `in_10` | [`slt/in_10/`](slt/in_10/) | 54 | 51,360 | Ported | SQL Logic Test `IN` predicate corpus with 10 input rows per table. |
+| `in_100` | [`slt/in_100/`](slt/in_100/) | 45 | 43,305 | Ported | SQL Logic Test `IN` predicate corpus with 100 input rows per table. |
+| `in_1000` | [`slt/in_1000/`](slt/in_1000/) | 18 | 17,265 | Ported | SQL Logic Test `IN` predicate corpus with 1,000 input rows per table. |
 
 ## Filtered query patterns
 
 | Pattern | Example | Scope | Reason | Skipped queries | Suites |
 | --- | --- | --- | --- | ---: | --- |
-| Non-correlated `IN` subquery predicates | `WHERE col0 IN (SELECT col3 FROM tab0 WHERE col3 >= 9)` | Outer `WHERE` clause; SQLite reports `LIST SUBQUERY`, not correlated | not supported | 17,441 | `between_*` |
+| Non-correlated `IN` subquery predicates | `WHERE col0 IN (SELECT col3 FROM tab0 WHERE col3 >= 9)` | Outer `WHERE` clause; SQLite reports `LIST SUBQUERY`, not correlated | not supported | 35,576 | `between_*`, `in_*` |
 
 ## Converter
 
